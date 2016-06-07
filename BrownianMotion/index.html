@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Brownian Motion</title>
+    <style type="text/css">
+      * { margin: 0; padding: 0; }
+      html, body { height: 100%; width: 100% }
+
+    </style>
+  </head>
+  <body>
+    <canvas width="500" height="500"></canvas>
+
+    <script type="text/javascript" src="circle.js"></script>
+    <script type="text/javascript" src="framesCounter.js"></script>
+    <script type="text/javascript" src="system.js"></script>
+    <script type="text/javascript" src="priorityQueue.js"></script>
+    <script type="text/javascript" src="collisionSystem.js"></script>
+    <script type="text/javascript">
+      window.collisionSystem = new FastCollisionSystem();
+      window.collisionSystem.start();
+    </script>
+  </body>
+</html>
